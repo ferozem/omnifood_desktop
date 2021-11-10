@@ -27,12 +27,14 @@ Letter Spacing:
 ref: https://maketintsandshades.com/#e67e22
 ref(contrast checker): --- https://coolors.co/contrast-checker/112a46-acc8e5
 
-- Tints: #cf711f, fae5d3
-- Shades: #fdf2e9
+- Tints: #cf711f, fae5d3, eb984e
+- Shades: #fdf2e9, #45260a
 - Accents: 
-- Greys:
+- Greys: 
+#6f6f6f(lightest grey allowed on #fdf2e9
 #555
 #333
+
 
 --- 03 IMAGES
 
@@ -44,6 +46,7 @@ uifaces.co
 
 
 --- 04 SHADOWS
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 
 --- 05 BORDER_RADIUS
@@ -95,7 +98,15 @@ body {
   display: grid;
   column-gap: 7.2rem;
   row-gap: 9.6rem;
+  margin-bottom: 9.6rem;
 }
+.grid:last-child {
+  margin-bottom: 0;
+}
+
+/* .gird:not(:last-child) {
+  margin-bottom: 9.6rem;
+} */
 .grid--center-v {
   align-items: center;
 }
@@ -145,6 +156,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -157,6 +169,11 @@ body {
   Put transition on original "state" */
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
+
+  /* only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -184,6 +201,17 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
 .link:link,
 .link:visited {
   display: inline-block;
@@ -199,6 +227,19 @@ body {
   border-bottom: 1px solid transparent;
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 /* HELPER/SETTINGS CLASSES */
 
 .margin-bottom-md {
