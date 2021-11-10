@@ -31,6 +31,8 @@ ref(contrast checker): --- https://coolors.co/contrast-checker/112a46-acc8e5
 - Shades: #fdf2e9, #45260a
 - Accents: 
 - Greys: 
+#888
+#767676
 #6f6f6f(lightest grey allowed on #fdf2e9
 #555
 #333
@@ -119,6 +121,9 @@ body {
 }
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .heading-primary,
