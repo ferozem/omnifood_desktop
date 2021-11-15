@@ -5,16 +5,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background-color: rgba(243, 251, 236, 0.5);
 
   /* because we want the header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
   position: relative;
+
+  /* position: absolute;
+  width: 100%; */
 }
 
 .logo {
-  height: 2.2rem;
+  height: 3.2rem;
 }
 
 /* ****************************** */
@@ -41,7 +44,7 @@
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color: #436a20;
 }
 
 .main-nav-link.nav-cta:link,
@@ -49,12 +52,12 @@
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #e67e22;
+  background-color: #6aaa32;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #cf711f;
+  background-color: #436a20;
 }
 /* ****************************** */
 /* mobile nav*/
@@ -98,9 +101,30 @@
 /* ****************************** */
 /* Hero section */
 /* ****************************** */
+
+.bg-img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(80, 100, 76, 0.616),
+      rgba(0, 17, 2, 0.801)
+    ),
+    url("../img/hero4.jpg");
+  /* background-image: url("../img/hero4.jpg"); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* position: relative; */
+}
+
+.carousel-img {
+  height: 100vh;
+  background-position: center;
+  /* width: 100%; */
+  /* height: 50rem; */
+}
 .section-hero {
-  background-color: #fdf2e9;
-  padding: 4.8rem 0 9.6rem 0;
+  background-color: #f3fbec;
+  /* padding: 4.8rem 0 9.6rem 0; */
 }
 
 .hero {
@@ -119,6 +143,20 @@
   margin-bottom: 4.8rem;
 }
 
+.hero-text-box-bg {
+  display: flex;
+  width: 60%;
+  color: #fff;
+
+  justify-content: right;
+  /* text-align: center; */
+  /* margin-top: 20rem; */
+}
+
+.img-container {
+  margin: 4.8rem;
+  padding: 3.2rem 0 0 8.4rem;
+}
 .hero-img {
   width: 100%;
 }
@@ -138,7 +176,7 @@
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  border: 3px solid #fdf2e9;
+  border: 3px solid #f3fbec;
 }
 
 .delivered-imgs img:last-child {
@@ -150,7 +188,7 @@
 }
 
 .delivered-text span {
-  color: #cf711f;
+  color: #f3fbec;
   font-weight: 700;
 }
 
@@ -236,7 +274,7 @@
 
   /* 60% of parent's width */
   padding-bottom: 60%;
-  background-color: #fdf2e9;
+  background-color: #f3fbec;
 
   /* to put circle behind the image - use Z index */
   z-index: -1;
@@ -250,7 +288,8 @@
 }
 
 .step-img {
-  width: 35%;
+  width: 75%;
+  border-radius: 1.6rem;
 }
 
 /* ****************************** */
@@ -328,7 +367,7 @@
   height: 2rem;
   width: 2.4rem;
   /* stroke and fill is not working-- color or font-size is working */
-  color: #e67e22;
+  color: #6aaa32;
 }
 
 .all-recipes {
@@ -346,13 +385,13 @@
 .list-icon {
   width: 3rem;
   height: 3rem;
-  color: #e67e22;
+  color: #6aaa32;
 }
 /* TESTIMONIAL SECTION */
 .section-testimonials {
   display: grid;
   grid-template-columns: 55fr 45fr;
-  background-color: #fdf2e9;
+  background-color: #f3fbec;
   align-items: center;
 }
 
@@ -384,7 +423,7 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
@@ -422,16 +461,16 @@
 }
 
 .pricing-plan--complete {
-  background-color: #fdf2e9;
+  background-color: #f3fbec;
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
 }
 .pricing-plan--complete::after {
-  content: "Best Value";
+  content: "Best";
   position: absolute;
   top: 6%;
-  right: -19%;
+  right: -14%;
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
@@ -447,11 +486,11 @@
 }
 .pricing-plan--starter {
   justify-self: end;
-  border: 2px solid #fdf2e9;
+  border: 2px solid #f3fbec;
   padding: 4.4rem;
 }
 .plan-name {
-  color: #cf711f;
+  color: #436a20;
   font-weight: 600;
   font-size: 2rem;
   text-transform: uppercase;
@@ -496,11 +535,11 @@
   line-height: 1.8;
 }
 .feature-icon {
-  color: #e67e22;
+  color: #6aaa32;
   height: 3.2rem;
   width: 3.2rem;
   margin-bottom: 3.2rem;
-  background-color: #fdf2e9;
+  background-color: #f3fbec;
   padding: 1.6rem;
   border-radius: 50%;
 }
@@ -519,21 +558,21 @@ CTA SECTION
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #e67e22;
+  background-color: #6aaa32;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
 
-  /* background-image: linear-gradient(90deg, red, #e67e22); */
-  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  /* background-image: linear-gradient(90deg, red, #6aaa32); */
+  background-image: linear-gradient(to right bottom, #c2ea9f, #6aaa32);
   overflow: hidden;
 }
 .cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  color: #45260a;
+  color: #1b2a0d;
 }
 
 .cta .heading-secondary {
-  color: #45260a;
+  color: #1b2a0d;
   margin-bottom: 3.2rem;
 }
 .cta-text {
@@ -547,7 +586,7 @@ CTA SECTION
       rgba(235, 151, 78, 0.35),
       rgba(230, 125, 34, 0.35)
     ),
-    url("../img/eating.jpg");
+    url("../img/welcome.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -573,7 +612,7 @@ CTA SECTION
   font-family: inherit;
   color: inherit;
   border: none;
-  border-color: #fdf2e9;
+  border-color: #f3fbec;
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -583,7 +622,7 @@ CTA SECTION
 
 .cta *:focus {
   outline: none;
-  /* outline: 4px dotted #e67e22;
+  /* outline: 4px dotted #6aaa32;
   outline-offset: 8px; */
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }

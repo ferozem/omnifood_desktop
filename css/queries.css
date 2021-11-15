@@ -221,15 +221,29 @@ rem has some issues in some browsers in media queries so use em*/
   .btn:visited {
     padding: 2.4rem 1.6rem;
   }
-  .section-hero {
+  /* .section-hero {
     padding: 2.4rem 0 6.4rem 0;
-  }
+  } */
   .hero {
     padding: 0 3.2rem;
   }
 
   .hero-img {
     width: 80%;
+  }
+
+  .hero-text-box-bg {
+    display: flex;
+    width: 100%;
+    color: #fff;
+
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 20rem; */
+  }
+  .img-container {
+    margin: 3.2rem;
+    padding: 0;
   }
 
   .logos img {
